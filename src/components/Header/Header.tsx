@@ -4,9 +4,13 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.content}>
-        <h1>Control Money</h1>
+        <h1>
+          <a href="/">Control Money </a>
+        </h1>
         <div>
-          <button>Sign-in</button>
+          <a href="/signin">
+            <button>Sign-in</button>
+          </a>
           <button>Sign-out</button>
         </div>
       </div>
