@@ -1,12 +1,14 @@
-import Header from "../Header/Header";
-import styles from "./SignIn.module.scss";
-const SignIn = () => {
+import Header from "../../components/Header/Header";
+import styles from "./Register.module.scss";
+
+const Register = () => {
   return (
     <>
       <Header />
       <div className={styles.container}>
         <form className={styles.formContainer}>
-          <h1>Faça Login</h1>
+          <h1>Crie sua conta</h1>
+          <input type={"name"} name={"name"} placeholder={"Digite seu Nome"} />
           <input
             type={"email"}
             name={"email"}
@@ -25,4 +27,5 @@ const SignIn = () => {
     </>
   );
 };
-export default SignIn;
+
+export default Register;
