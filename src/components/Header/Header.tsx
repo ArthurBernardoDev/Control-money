@@ -11,7 +11,9 @@ const Header = () => {
           <a href="/signin">
             <button>Sign-in</button>
           </a>
-          <button>Sign-out</button>
+          <a href="/register">
+            <button>Register</button>
+          </a>
         </div>
       </div>
     </header>
