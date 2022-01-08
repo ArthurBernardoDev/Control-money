@@ -38,8 +38,17 @@
       font-weight: 600;
 
     }
+    .disabledButton{
+      background-color: #dccab1;
+      cursor: auto;
+      color: #fff;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: 4px;
+      margin-top: 32px;
+      border: none;
+    }
     .button {
-      margin-top: 16px;
       background-color: #fca311;
       color: #fff;
       font-weight: 700;
