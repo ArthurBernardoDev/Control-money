@@ -34,10 +34,6 @@ const SignIn: React.FC = () => {
     console.log(response)
   }
 
-
-
-
-
   return (
     <>
       <Header />
