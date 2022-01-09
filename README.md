@@ -13,9 +13,9 @@
 
 ## Sobre o projeto
 
-O projeto tem como objetivo o desenvolvimento de uma aplicação em ReactJS com NextJS para apresentar sites e projetos..
+O projeto tem como objetivo o desenvolvimento de uma aplicação em ReactJS  para controle de gastos.
 
-A aplicação foi desenvolvida utilizando o framework NextJS aplicando conceitos como Server Side Rendering (SSR), Static Site Generation (SSG). ChakraUI para o estilo do site.
+A aplicação foi desenvolvida utilizando o framework ReactJs. Scss para o estilo do site.
 
 ---
 
