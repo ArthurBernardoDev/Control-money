@@ -31,8 +31,6 @@ export default function useAuth() {
         const {
             data: { token },
         } = await api.post('/auth', data['data'])
-        /* eslint-disable no-console */
-        console.log(token)
         localStorage.setItem('token:control-money', JSON.stringify(token))
         api.defaults.headers.common['Authorization'] = `Bearer ${token}`
         setAuthenticated(true)

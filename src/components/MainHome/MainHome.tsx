@@ -1,5 +1,5 @@
 import styles from "./MainHome.module.scss";
-import Avatar from "../../assets/avatar.svg";
+import Personal from "../../assets/36.-Personal-Growth.svg";
 
 const HomePage: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
             <span>acesse a plataforma agora!</span>
           </p>
         </section>
-        <img src={Avatar} alt="" />
+        <img src={Personal} alt="" />
       </main>
     </>
   );

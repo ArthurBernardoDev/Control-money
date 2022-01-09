@@ -1,7 +1,7 @@
 import Header from "../../components/Header/Header";
 import styles from "./SignIn.module.scss";
 import React, { useContext, useState} from "react";
-import {useForm} from "react-hook-form";
+import { useForm} from "react-hook-form";
 import {useHistory} from "react-router-dom";
 import {yupResolver} from "@hookform/resolvers/yup";
 import {Context} from "../../context/AuthContext";
@@ -36,9 +36,7 @@ function SignIn() {
   const {handleLogin} = useContext(Context)
 
   const handleOnSubmit = async (data: FormInputs) => {
-    await handleLogin({ data })
-        .then(() => history.push('/'))
-        .catch(() => SetErrorLogin(true))
+    await handleLogin({ data }).then(() => history.push('/dashboard')).catch(() => SetErrorLogin(true))
   }
 
   return (

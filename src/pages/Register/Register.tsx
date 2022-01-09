@@ -2,18 +2,10 @@ import Header from "../../components/Header/Header";
 import styles from "./Register.module.scss";
 import api from "../../api/api";
 import {ChangeEvent, useEffect, useState} from "react";
-import {AxiosResponse} from "axios";
 import {useHistory} from "react-router-dom";
-
-
-type responseData ={
-  name: string
-}
-
 const Register = () => {
+
   const history = useHistory()
-  const [resNameUser, setResNameUser] = useState('')
-  console.log(resNameUser)
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -30,7 +22,6 @@ const Register = () => {
 e.preventDefault()
 
    api.post('users', {name, email, password})
-       .then((res:AxiosResponse<responseData>) => setResNameUser(res.data.name))
        .then(() => history.push('/signin'))
        .catch(() => setErrorLogin(true))
   }
